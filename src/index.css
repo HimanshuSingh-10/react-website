@@ -1,0 +1,119 @@
+.testimonial-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  margin-top: 50px;
+  padding: 30px 50px; 
+}
+
+.row {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+/* Card styles */
+.new-card {
+  position: relative;
+  margin: 0 15px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.new-card img {
+  width: 100px; 
+  height: 100px; 
+  object-fit: cover; 
+  border-radius: 50%;
+  border: 2px solid #ddd;
+  display: block; 
+  margin: 0 auto; 
+  margin-bottom: 15px; 
+}
+
+.new-card-body {
+  padding: 15px;
+}
+
+/* Star rating styles */
+.star-rating {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.star-rating .fa-star {
+  color: #ccc;
+  font-size: 20px;
+  margin-right: 5px;
+}
+
+.star-rating .fa-star.checked {
+  color: #ffb400;
+}
+
+/* Text styling */
+.new-card-text {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* Arrow button styles */
+.arrow-btn {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  margin: 0 10px;  
+}
+
+.arrow-btn:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.arrow-btn:focus {
+  outline: none;
+}
+
+.prev {
+  left: 10px; 
+}
+
+.next {
+  right: 10px; 
+}
+
+@media (max-width: 767px) {
+  .row {
+      display: grid;
+      grid-template-columns: 1fr; 
+      gap: 15px;
+  }
+
+  .new-card {
+      margin: 0;
+  }
+
+  .testimonial-container {
+      padding: 20px 20px;
+  }
+}
+
+/* Controls the sliding of the testimonial container */
+.testimonial-container .row {
+  transform: translateX(0);
+}
+
+.testimonial-container:hover .row {
+  animation-play-state: paused;
+}
