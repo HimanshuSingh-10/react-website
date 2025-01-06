@@ -8,6 +8,7 @@ import './index.css';
 import About from './components/About';
 import Projects from './components/Projects';
 import Contact from "./components/Contact";
+import Footer from "./components/Footer"; 
 
 const router = createBrowserRouter(
   [
@@ -29,7 +30,7 @@ const router = createBrowserRouter(
         </div>
         <Testimonial />
       </div>
-      
+      <Footer/>
     </div>
      )
     },
@@ -40,6 +41,7 @@ const router = createBrowserRouter(
         <NavBar/>
         <Carousel />
          <About/>
+         <Footer/>
         
       </div>
       )
@@ -52,6 +54,8 @@ const router = createBrowserRouter(
         <NavBar/>
         <Carousel />
         <Projects/>
+        <Footer/>
+
       </div>
       )
     },
@@ -63,6 +67,8 @@ const router = createBrowserRouter(
         <NavBar/>
         <Carousel />
         <Contact/>
+        <Footer/>
+
       </div>
       )
     },

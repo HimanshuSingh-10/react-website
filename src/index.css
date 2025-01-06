@@ -117,3 +117,259 @@
 .testimonial-container:hover .row {
   animation-play-state: paused;
 }
+
+/* Footer.css */
+.footer {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: left;
+  font-family: Arial, sans-serif;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.footer-section {
+  width: 30%;
+}
+
+.footer-section h3 {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+/* Section Heading Colors */
+.footer-section h3.address {
+  color: #FF9800;  /* Green for Address */
+}
+
+.footer-section h3.contactt {
+  color: #FF9800;  /* Orange for Contact Us */
+}
+
+.footer-section h3.support {
+  color: #FF9800;  /* Blue for Help & Support */
+}
+
+.footer-section p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+.footer-bottom {
+  text-align: center;
+  font-size: 12px;
+}
+
+.footer-bottom p {
+  margin: 10px 0;
+}
+
+.footer-bottom p {
+  margin: 10px 0;
+  color: #FF9800;  /* Yellow for All rights reserved text */
+}
+
+/* Main container for the About page */
+.about-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  gap: 40px;
+  flex-wrap: wrap; /* Allow for responsiveness */
+}
+
+/* Text section on the left */
+.about-text-section {
+  flex: 1;
+  max-width: 600px; /* Limit the width for better readability */
+  padding: 20px;
+}
+
+.about-text-section h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+}
+
+.about-text {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.about-read-more {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.about-read-more:hover {
+  background-color: #45a049;
+}
+
+/* Image section on the right */
+.about-image-section {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-image-section img {
+  max-width: 70%; /* Make the image smaller by setting max-width */
+  height: auto;
+  border-radius: 10px; /* Optional: Gives rounded corners to the image */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds shadow for better depth */
+}
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #ffffff;  
+  color: #333;
+}
+
+  /* Projects Container */
+  .projects-containerr {
+    padding: 60px 20px;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #f5f5f0; /* Ensure the background color is also white here */
+  }
+
+
+  /* Title Styling */
+  .projects-title {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #2c3e50;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+
+  /* Cards Container - Grid Layout */
+  .projects-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    justify-items: center;
+  }
+
+  /* Individual Project Card Styling */
+  .project-card {
+    background-color: #222422;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: all 0.3s ease;
+    max-width: 320px;
+    text-align: center;
+    padding: 20px;
+    cursor: pointer;
+  }
+
+  /* Hover Effect for Project Cards */
+  .project-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Project Image */
+  .project-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+  }
+
+  /* Image Hover Effect */
+  .project-card:hover .project-image {
+    transform: scale(1.05);
+  }
+
+  /* Project Title */
+  .project-title {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #d9dbdc;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+  }
+
+  /* Project Description */
+  .project-description {
+    font-size: 1rem;
+    color: #f6f9fa;
+    margin-bottom: 20px;
+    line-height: 1.6;
+  }
+
+  /* Project Link Styling */
+  .project-link {
+    font-size: 1.1rem;
+    color: #2980b9;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 8px 20px;
+    border: 2px solid #2980b9;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+  }
+
+  .project-link:hover {
+    background-color: #2980b9;
+    color: #fff;
+    border-color: #2980b9;
+  }
+
+  /* Responsive Design - Mobile */
+  @media (max-width: 768px) {
+    .projects-title {
+      font-size: 2.5rem;
+      margin-bottom: 40px;
+    }
+
+    .projects-cards {
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 20px;
+    }
+
+    .project-card {
+      max-width: 280px;
+    }
+
+    .project-title {
+      font-size: 1.4rem;
+    }
+
+    .project-description {
+      font-size: 0.95rem;
+    }
+
+    .project-link {
+      font-size: 1rem;
+    }
+  }
+
+

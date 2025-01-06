@@ -174,32 +174,81 @@
   font-size: 16px;
 }
 
-
-.contact-container {
-  background-color: #e9f5ff;
-  padding: 20px;
+/* Style for the Contact form */
+.contact {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 15px; /* Slightly reduced padding */
+  background-color: #f9f9f9;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-
-.contact-list {
-  list-style: none; 
-  padding: 0;
-  margin: 0;
-}
-
-.contact-list li {
-  color: #555;
-  font-size: 16px;
-  margin-bottom: 10px;
-}
-
-.contact-container h2 {
+.contact h2 {
+  text-align: center;
+  margin-bottom: 10px; /* Reduced margin to make the heading closer */
   color: #333;
-  font-size: 24px;
-  margin-bottom: 15px;
 }
+
+.contact form div {
+  margin-bottom: 10px; /* Reduced margin between form fields */
+}
+
+.contact label {
+  display: block;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 4px; /* Reduced margin between label and input field */
+}
+
+.contact input, .contact textarea {
+  width: 100%;
+  padding: 8px; /* Reduced padding for smaller input fields */
+  font-size: 14px; /* Slightly reduced font size for inputs */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.contact input:focus, .contact textarea:focus {
+  border-color: #4CAF50;
+  outline: none;
+}
+
+.contact textarea {
+  height: 100px; /* Reduced the height of the textarea to decrease form length */
+  resize: vertical;
+}
+
+.contact button {
+  width: 100%;
+  padding: 10px; /* Reduced padding on button */
+  background-color: #4CAF50;
+  color: white;
+  font-size: 14px; /* Reduced font size for button */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact button:hover {
+  background-color: #45a049;
+}
+
+.success-message {
+  padding: 12px; /* Reduced padding in success message */
+  margin-bottom: 15px; /* Reduced margin between success message and form */
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.success-message:empty {
+  display: none;
+}
+
 
 
 
@@ -228,6 +277,7 @@
   font-size: 24px;
   margin-bottom: 15px; 
 }
+
 
 
  
